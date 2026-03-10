@@ -4,6 +4,10 @@ body {
     background-color: #FFFFFF;
 }
 
+input::placeholder{
+    color: #FFFFFF;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -472,4 +476,52 @@ ul {
 
 .footer-social-svg {
     fill: #f4f4fd;
+}
+
+.footer-inp-form {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.footer-inp-form-label {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 80px;
+    gap: 16px;
+    font-style: medium;
+}
+
+.footer-inp-form-label input{
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 8px 16px;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 4%;
+}
+
+.send-svg {
+    background-color: #4D5AE5;
+    padding: 8px 24px;
+    color: #FFFFFF;
+    font-style: medium;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 4%;
+    border-radius: 4px;
+    display: flex;
+    gap: 16px;
+    height: 40px;
+    border: none;
 }
