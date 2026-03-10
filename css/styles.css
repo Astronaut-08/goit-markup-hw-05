@@ -498,9 +498,6 @@ ul {
 }
 
 .footer-inp-form-label-input{
-    width: 264px;
-    height: 40px;
-    border: 1px solid #FFFFFF;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0);
     padding: 8px 16px;
@@ -508,6 +505,24 @@ ul {
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 4%;
+}
+
+.foot-lbl-inp {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.foot-lbl-inp::placeholder {
+    color: #FFFFFF;
 }
 
 .send-svg {
@@ -724,6 +739,28 @@ ul {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+}
+
+.check-label-span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: 
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+
+}
+
+.visually-hidden:checked + .check-accept-label .check-label-span {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .privacy {
